@@ -14,6 +14,10 @@
 		721AD6061C699061003768B7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AD6051C699061003768B7 /* LoginViewController.swift */; };
 		721AD60C1C6A0643003768B7 /* MyTripsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AD60B1C6A0643003768B7 /* MyTripsTableViewController.swift */; };
 		721AD60E1C6A065A003768B7 /* BookATripTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AD60D1C6A065A003768B7 /* BookATripTableViewController.swift */; };
+		721AD6101C6A4B28003768B7 /* TourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AD60F1C6A4B28003768B7 /* TourTableViewCell.swift */; };
+		721AD6121C6A4B4E003768B7 /* ChooseTourTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AD6111C6A4B4E003768B7 /* ChooseTourTableViewController.swift */; };
+		721AD6141C6A4B61003768B7 /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AD6131C6A4B61003768B7 /* Tour.swift */; };
+		721AD6161C6A4BB0003768B7 /* TourDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AD6151C6A4BB0003768B7 /* TourDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		721AD6051C699061003768B7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		721AD60B1C6A0643003768B7 /* MyTripsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTripsTableViewController.swift; sourceTree = "<group>"; };
 		721AD60D1C6A065A003768B7 /* BookATripTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookATripTableViewController.swift; sourceTree = "<group>"; };
+		721AD60F1C6A4B28003768B7 /* TourTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourTableViewCell.swift; sourceTree = "<group>"; };
+		721AD6111C6A4B4E003768B7 /* ChooseTourTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseTourTableViewController.swift; sourceTree = "<group>"; };
+		721AD6131C6A4B61003768B7 /* Tour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
+		721AD6151C6A4BB0003768B7 /* TourDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,8 @@
 		721AD6071C699066003768B7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				721AD6151C6A4BB0003768B7 /* TourDetailsViewController.swift */,
+				721AD6111C6A4B4E003768B7 /* ChooseTourTableViewController.swift */,
 				721AD60D1C6A065A003768B7 /* BookATripTableViewController.swift */,
 				721AD60B1C6A0643003768B7 /* MyTripsTableViewController.swift */,
 				721AD6051C699061003768B7 /* LoginViewController.swift */,
@@ -91,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				721AD5F71C698E7B003768B7 /* Main.storyboard */,
+				721AD60F1C6A4B28003768B7 /* TourTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -98,6 +109,7 @@
 		721AD60A1C699089003768B7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				721AD6131C6A4B61003768B7 /* Tour.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -174,10 +186,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				721AD6141C6A4B61003768B7 /* Tour.swift in Sources */,
+				721AD6161C6A4BB0003768B7 /* TourDetailsViewController.swift in Sources */,
 				721AD60C1C6A0643003768B7 /* MyTripsTableViewController.swift in Sources */,
 				721AD6061C699061003768B7 /* LoginViewController.swift in Sources */,
+				721AD6121C6A4B4E003768B7 /* ChooseTourTableViewController.swift in Sources */,
 				721AD5F41C698E7B003768B7 /* AppDelegate.swift in Sources */,
 				721AD60E1C6A065A003768B7 /* BookATripTableViewController.swift in Sources */,
+				721AD6101C6A4B28003768B7 /* TourTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
