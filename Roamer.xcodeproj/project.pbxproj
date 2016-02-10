@@ -20,6 +20,7 @@
 		721AD6161C6A4BB0003768B7 /* TourDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AD6151C6A4BB0003768B7 /* TourDetailsViewController.swift */; };
 		721AD6181C6A61B1003768B7 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AD6171C6A61B1003768B7 /* Destination.swift */; };
 		721AD61A1C6AD300003768B7 /* SelectDatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AD6191C6AD300003768B7 /* SelectDatesViewController.swift */; };
+		721AD61C1C6ADCE0003768B7 /* DestinationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AD61B1C6ADCE0003768B7 /* DestinationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		721AD6151C6A4BB0003768B7 /* TourDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourDetailsViewController.swift; sourceTree = "<group>"; };
 		721AD6171C6A61B1003768B7 /* Destination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		721AD6191C6AD300003768B7 /* SelectDatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDatesViewController.swift; sourceTree = "<group>"; };
+		721AD61B1C6ADCE0003768B7 /* DestinationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				721AD5F71C698E7B003768B7 /* Main.storyboard */,
+				721AD61B1C6ADCE0003768B7 /* DestinationTableViewCell.swift */,
 				721AD60F1C6A4B28003768B7 /* TourTableViewCell.swift */,
 			);
 			name = View;
@@ -202,6 +205,7 @@
 				721AD60E1C6A065A003768B7 /* BookATripTableViewController.swift in Sources */,
 				721AD61A1C6AD300003768B7 /* SelectDatesViewController.swift in Sources */,
 				721AD6101C6A4B28003768B7 /* TourTableViewCell.swift in Sources */,
+				721AD61C1C6ADCE0003768B7 /* DestinationTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

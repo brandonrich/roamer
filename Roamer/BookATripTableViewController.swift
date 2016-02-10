@@ -20,6 +20,7 @@ class BookATripTableViewController: UITableViewController {
         t.details = "Many people have visited this world-famous landmark, but only our tours extend to the little-seen basement of the Eiffel Tower!"
         t.imageName = "eiffel tower"
         paris.addTour(t)
+        paris.imageName = "paris_banner"
         
         t = Tour(name: "Sites of the French Revolution", price: 40)
         t.details = "I dreamed a dream: that an amphibious truck would one day barrel down the Rue de Barres blasting showtunes and historical facts!  Be the master of the house with this great tour!"
@@ -39,13 +40,16 @@ class BookATripTableViewController: UITableViewController {
         
 
         let rome = Destination(name: "Rome", imageName: "rome")
+        rome.imageName = "rome_banner"
         let london = Destination(name: "London", imageName: "london")
+        london.imageName = "london_banner"
 
         destinations.append(paris)
         destinations.append(rome)
         destinations.append(london)
 
 
+        self.tabBarController?.title = "Destinations"
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -75,9 +79,13 @@ class BookATripTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("bookTripCell", forIndexPath: indexPath)
+        if let destinationCell = cell as? DestinationTableViewCell {
+            destinationCell.nameLabel?.text = destinations[indexPath.row].name
+            destinationCell.destinationImageView.image = UIImage(named: destinations[indexPath.row].imageName)
+        }
 
         // Configure the cell...
-        cell.textLabel?.text = destinations[indexPath.row].name
+
         return cell
     }
     

@@ -98,19 +98,43 @@
         <scene sceneID="O55-6N-aRj">
             <objects>
                 <tableViewController title="Book a Trip" id="Cn6-Hn-V0A" customClass="BookATripTableViewController" customModule="Roamer" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="MiV-Gq-6YK">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="119" sectionHeaderHeight="28" sectionFooterHeight="28" id="MiV-Gq-6YK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="bookTripCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="bookTripCell" id="5JD-SM-M68">
-                                <rect key="frame" x="0.0" y="92" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="bookTripCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="bookTripCell" rowHeight="119" id="5JD-SM-M68" customClass="DestinationTableViewCell" customModule="Roamer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="414" height="119"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5JD-SM-M68" id="xcT-UF-7ti">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="118.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paris_banner" translatesAutoresizingMaskIntoConstraints="NO" id="TaZ-mQ-C3W">
+                                            <rect key="frame" x="8" y="8" width="398" height="102.5"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Paris" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8q4-Eo-b2c">
+                                            <rect key="frame" x="126.5" y="49.5" width="161" height="34"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="161" id="X0W-fm-cHT"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="28"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="8q4-Eo-b2c" firstAttribute="centerX" secondItem="xcT-UF-7ti" secondAttribute="centerX" id="Mxq-Hn-wGg"/>
+                                        <constraint firstItem="8q4-Eo-b2c" firstAttribute="centerY" secondItem="xcT-UF-7ti" secondAttribute="centerY" id="RGj-Og-O62"/>
+                                        <constraint firstItem="TaZ-mQ-C3W" firstAttribute="top" secondItem="xcT-UF-7ti" secondAttribute="topMargin" id="mBg-zD-vdN"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="TaZ-mQ-C3W" secondAttribute="trailing" id="unE-wG-dUy"/>
+                                        <constraint firstItem="TaZ-mQ-C3W" firstAttribute="leading" secondItem="xcT-UF-7ti" secondAttribute="leadingMargin" id="v1t-B1-XBg"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="TaZ-mQ-C3W" secondAttribute="bottom" id="xfu-di-TnL"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="destinationImageView" destination="TaZ-mQ-C3W" id="1FC-nr-fis"/>
+                                    <outlet property="nameLabel" destination="8q4-Eo-b2c" id="K0x-sX-3c1"/>
                                     <segue destination="gMl-Oy-V5V" kind="show" id="3pp-0v-mj6"/>
                                 </connections>
                             </tableViewCell>
@@ -319,10 +343,10 @@ details of the tour details</string>
             </objects>
             <point key="canvasLocation" x="4267" y="509"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Roamer-->
         <scene sceneID="TZo-e2-ute">
             <objects>
-                <tabBarController id="KzW-L4-n6d" sceneMemberID="viewController">
+                <tabBarController title="Roamer" id="KzW-L4-n6d" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="oYE-dY-pec">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -379,5 +403,6 @@ details of the tour details</string>
         <image name="Beach-60_percent" width="30" height="30"/>
         <image name="Contacts-50" width="50" height="50"/>
         <image name="Icon+Beach+Square" width="500" height="500"/>
+        <image name="paris_banner" width="525" height="294"/>
     </resources>
 </document>
