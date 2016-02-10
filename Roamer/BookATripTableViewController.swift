@@ -10,10 +10,42 @@ import UIKit
 
 class BookATripTableViewController: UITableViewController {
 
-    var cities = ["Paris","London","Rome"]
+    var destinations : [Destination] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let paris = Destination(name: "Paris", imageName: "paris")
+        var t = Tour(name: "Eiffel Tower Tour", price: 50)
+        t.details = "Many people have visited this world-famous landmark, but only our tours extend to the little-seen basement of the Eiffel Tower!"
+        t.imageName = "eiffel tower"
+        paris.addTour(t)
+        
+        t = Tour(name: "Sites of the French Revolution", price: 40)
+        t.details = "I dreamed a dream: that an amphibious truck would one day barrel down the Rue de Barres blasting showtunes and historical facts!  Be the master of the house with this great tour!"
+        t.imageName = "notredame-paris"
+        paris.addTour(t)
+
+        t = Tour(name: "Famous Architecture", price: 45)
+        t.details = "Experience the same amazing structures you scaled in Assassin's Creed!  Warning: no haystack diving."
+        t.imageName = "sorbonne"
+        paris.addTour(t)
+        
+        t = Tour(name: "Arc de Triomphe", price: 55)
+        t.details = "\"3.7 Stars!\" -- Yelp\n\"Most Triumphant!\" -- Bill and Ted"
+        t.imageName = "arc"
+        paris.addTour(t)
+        
+        
+
+        let rome = Destination(name: "Rome", imageName: "rome")
+        let london = Destination(name: "London", imageName: "london")
+
+        destinations.append(paris)
+        destinations.append(rome)
+        destinations.append(london)
+
+
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -37,7 +69,7 @@ class BookATripTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return cities.count
+        return destinations.count
     }
 
     
@@ -45,8 +77,16 @@ class BookATripTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("bookTripCell", forIndexPath: indexPath)
 
         // Configure the cell...
-        cell.textLabel?.text = cities[indexPath.row]
+        cell.textLabel?.text = destinations[indexPath.row].name
         return cell
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let dateVC = segue.destinationViewController as? SelectDatesViewController,
+            cell = sender as? UITableViewCell,
+            indexPath = self.tableView.indexPathForCell(cell){
+            dateVC.destination = destinations[indexPath.row]
+        }
     }
     
 

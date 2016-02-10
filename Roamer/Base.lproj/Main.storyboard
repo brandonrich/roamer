@@ -128,7 +128,7 @@
         <!--Travel Dates-->
         <scene sceneID="Cho-Ju-10m">
             <objects>
-                <viewController title="Travel Dates" id="gMl-Oy-V5V" sceneMemberID="viewController">
+                <viewController title="Travel Dates" id="gMl-Oy-V5V" customClass="SelectDatesViewController" customModule="Roamer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kCf-oa-5Vf"/>
                         <viewControllerLayoutGuide type="bottom" id="nn2-QK-Spd"/>
@@ -186,19 +186,63 @@
         <scene sceneID="eec-f0-Vh6">
             <objects>
                 <tableViewController title="Choose a Tour" id="Gou-T3-1S3" customClass="ChooseTourTableViewController" customModule="Roamer" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4by-M4-4NJ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="214" sectionHeaderHeight="28" sectionFooterHeight="28" id="4by-M4-4NJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Uek-z4-0IS" customClass="TourTableViewCell" customModule="Roamer" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tourCell" rowHeight="214" id="Uek-z4-0IS" customClass="TourTableViewCell" customModule="Roamer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="414" height="214"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Uek-z4-0IS" id="XeA-Mp-CfM">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="213.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tour Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSe-NC-YLL">
+                                            <rect key="frame" x="8" y="8" width="300" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon+Beach+Square" translatesAutoresizingMaskIntoConstraints="NO" id="rVe-Lm-IG4">
+                                            <rect key="frame" x="247" y="60" width="162" height="139.5"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Contacts-50" translatesAutoresizingMaskIntoConstraints="NO" id="Pjt-I1-BFS">
+                                            <rect key="frame" x="331" y="8" width="22" height="21"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3 of 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQI-dd-J4t">
+                                            <rect key="frame" x="361" y="8" width="45" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xd5-SQ-yLu">
+                                            <rect key="frame" x="8" y="36" width="231" height="127.5"/>
+                                            <string key="text">Details of the tour 
+details
+details of the tour details</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$50/person" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0Y-B2-skp">
+                                            <rect key="frame" x="228" y="36" width="178" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4L-IA-cpP">
+                                            <rect key="frame" x="8" y="169" width="78" height="30"/>
+                                            <state key="normal" title="Select Tour"/>
+                                        </button>
+                                    </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="capacityLabel" destination="ZQI-dd-J4t" id="ywk-JP-S7D"/>
+                                    <outlet property="detailsLabel" destination="xd5-SQ-yLu" id="QHc-dj-5YP"/>
+                                    <outlet property="nameLabel" destination="nSe-NC-YLL" id="Ppx-YY-zRn"/>
+                                    <outlet property="priceLabel" destination="s0Y-B2-skp" id="tkF-p0-X8s"/>
+                                    <outlet property="tourImageView" destination="rVe-Lm-IG4" id="lzy-Lv-5qq"/>
                                     <segue destination="qlP-z3-WCb" kind="show" id="fNF-rm-IOr"/>
                                 </connections>
                             </tableViewCell>
@@ -224,6 +268,11 @@
                     <view key="view" contentMode="scaleToFill" id="27t-ZF-DCZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nBg-PW-Dax">
+                                <rect key="frame" x="87" y="271" width="240" height="128"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
@@ -242,8 +291,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="xJA-Ju-czc" kind="relationship" relationship="viewControllers" id="pcG-JF-874"/>
                         <segue destination="Cn6-Hn-V0A" kind="relationship" relationship="viewControllers" id="qCq-K4-h21"/>
+                        <segue destination="xJA-Ju-czc" kind="relationship" relationship="viewControllers" id="pcG-JF-874"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nDY-dN-2oR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -268,9 +317,28 @@
             </objects>
             <point key="canvasLocation" x="299" y="297"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="4vt-2B-Ypm">
+            <objects>
+                <viewController id="Npf-4S-TKl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QIi-h7-nar"/>
+                        <viewControllerLayoutGuide type="bottom" id="eVg-8Z-lS4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HMt-v3-EzW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tbf-kg-7Q4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
         <image name="Airport-60_percent" width="30" height="30"/>
         <image name="Beach-60_percent" width="30" height="30"/>
+        <image name="Contacts-50" width="50" height="50"/>
+        <image name="Icon+Beach+Square" width="500" height="500"/>
     </resources>
 </document>

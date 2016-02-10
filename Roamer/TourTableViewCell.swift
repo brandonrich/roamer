@@ -10,6 +10,13 @@ import UIKit
 
 class TourTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var capacityLabel: UILabel!
+
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var detailsLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var tourImageView: UIImageView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -10,4 +10,14 @@ import Foundation
 
 class Tour {
     
+    var name : String = ""
+    var details : String = ""
+    var price : Int = 0
+    var imageName : String = "eiffel tower"
+    
+    init(name: String, price: Int) {
+        self.name = name
+        self.price = price
+    }
+    
 }
