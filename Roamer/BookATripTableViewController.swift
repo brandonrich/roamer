@@ -12,6 +12,9 @@ class BookATripTableViewController: UITableViewController {
 
     var destinations : [Destination] = []
     
+    override func viewWillAppear(animated: Bool) {
+        self.tabBarController?.title = "Destinations"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -47,9 +50,6 @@ class BookATripTableViewController: UITableViewController {
         destinations.append(paris)
         destinations.append(rome)
         destinations.append(london)
-
-
-        self.tabBarController?.title = "Destinations"
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
