@@ -42,14 +42,18 @@ class BookATripTableViewController: UITableViewController {
         
         
 
-        let rome = Destination(name: "Rome", imageName: "rome")
-        rome.imageName = "rome_banner"
-        let london = Destination(name: "London", imageName: "london")
-        london.imageName = "london_banner"
+        let rome = Destination(name: "Rome", imageName: "rome_banner")
+        let london = Destination(name: "London", imageName: "london_banner")
+        let ny = Destination(name: "New York", imageName: "new_york_banner")
+
 
         destinations.append(paris)
         destinations.append(rome)
         destinations.append(london)
+        destinations.append(ny)
+        destinations.append(Destination(name: "Tokyo", imageName: "tokyo_banner"))        
+        destinations.append(Destination(name: "Sydney", imageName: "sydney_banner"))
+
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
