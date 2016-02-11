@@ -335,7 +335,7 @@ details of the tour details</string>
         <!--Tour Guide-->
         <scene sceneID="YrK-pE-8Fm">
             <objects>
-                <viewController title="Tour Guide" id="9dg-eV-SW1" sceneMemberID="viewController">
+                <viewController title="Tour Guide" id="9dg-eV-SW1" customClass="TourDetailsViewController" customModule="Roamer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bFp-Rw-gho"/>
                         <viewControllerLayoutGuide type="bottom" id="Uee-em-erF"/>
@@ -358,7 +358,7 @@ details of the tour details</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TE4-wM-mXT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TE4-wM-mXT">
                                 <rect key="frame" x="20" y="144" width="374" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="IWd-Zw-6hB"/>
@@ -432,6 +432,10 @@ details of the tour details</string>
                             <constraint firstItem="Uyp-5R-GiU" firstAttribute="top" secondItem="a8d-zg-qbA" secondAttribute="bottom" constant="13" id="uX6-tv-4SN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="detailsLabel" destination="TE4-wM-mXT" id="Qi9-tP-zXu"/>
+                        <outlet property="tourNameLabel" destination="fLc-XV-QUQ" id="kKX-pZ-8Ar"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uSq-1l-wLz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

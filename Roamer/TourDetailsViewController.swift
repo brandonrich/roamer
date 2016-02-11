@@ -10,9 +10,14 @@ import UIKit
 
 class TourDetailsViewController: UIViewController {
 
+    var tour : Tour?
+    @IBOutlet weak var tourNameLabel: UILabel!
+    @IBOutlet weak var detailsLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tourNameLabel.text = tour?.name
+        detailsLabel.numberOfLines = 0
+        detailsLabel.text = tour?.details
         // Do any additional setup after loading the view.
     }
 
