@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7202CE211C6C3BA100C50257 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7202CE201C6C3BA100C50257 /* Review.swift */; };
 		721AD5F41C698E7B003768B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AD5F31C698E7B003768B7 /* AppDelegate.swift */; };
 		721AD5F91C698E7B003768B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 721AD5F71C698E7B003768B7 /* Main.storyboard */; };
 		721AD5FB1C698E7B003768B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 721AD5FA1C698E7B003768B7 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7202CE201C6C3BA100C50257 /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		721AD5F01C698E7B003768B7 /* Roamer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roamer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		721AD5F31C698E7B003768B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		721AD5F81C698E7B003768B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				7272C1471C6C306F00D42EC6 /* GuestTableViewCell.swift */,
+				7202CE201C6C3BA100C50257 /* Review.swift */,
 				721AD5F71C698E7B003768B7 /* Main.storyboard */,
 				721AD61B1C6ADCE0003768B7 /* DestinationTableViewCell.swift */,
 				721AD60F1C6A4B28003768B7 /* TourTableViewCell.swift */,
@@ -209,6 +212,7 @@
 				721AD60C1C6A0643003768B7 /* MyTripsTableViewController.swift in Sources */,
 				721AD6061C699061003768B7 /* LoginViewController.swift in Sources */,
 				721AD6121C6A4B4E003768B7 /* ChooseTourTableViewController.swift in Sources */,
+				7202CE211C6C3BA100C50257 /* Review.swift in Sources */,
 				721AD6181C6A61B1003768B7 /* Destination.swift in Sources */,
 				7272C1481C6C306F00D42EC6 /* GuestTableViewCell.swift in Sources */,
 				721AD5F41C698E7B003768B7 /* AppDelegate.swift in Sources */,
