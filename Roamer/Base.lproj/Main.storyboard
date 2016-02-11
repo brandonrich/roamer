@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hf0-2f-DnR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Npf-4S-TKl">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -318,7 +318,6 @@ details of the tour details</string>
                                     <outlet property="nameLabel" destination="nSe-NC-YLL" id="Ppx-YY-zRn"/>
                                     <outlet property="priceLabel" destination="s0Y-B2-skp" id="tkF-p0-X8s"/>
                                     <outlet property="tourImageView" destination="rVe-Lm-IG4" id="lzy-Lv-5qq"/>
-                                    <segue destination="qlP-z3-WCb" kind="show" id="fNF-rm-IOr"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -330,30 +329,7 @@ details of the tour details</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ZA-iy-3PJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3752" y="509"/>
-        </scene>
-        <!--Tour Details-->
-        <scene sceneID="pxK-Vx-P7G">
-            <objects>
-                <viewController title="Tour Details" id="qlP-z3-WCb" customClass="TourDetailsViewController" customModule="Roamer" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="I6V-15-M7w"/>
-                        <viewControllerLayoutGuide type="bottom" id="Qrp-HX-8sD"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="27t-ZF-DCZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nBg-PW-Dax">
-                                <rect key="frame" x="87" y="271" width="240" height="128"/>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Yk-xV-cHs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4267" y="509"/>
+            <point key="canvasLocation" x="3794" y="322"/>
         </scene>
         <!--Roamer-->
         <scene sceneID="TZo-e2-ute">
@@ -392,22 +368,68 @@ details of the tour details</string>
             </objects>
             <point key="canvasLocation" x="299" y="297"/>
         </scene>
-        <!--View Controller-->
+        <!--Tour Details View Controller-->
         <scene sceneID="4vt-2B-Ypm">
             <objects>
-                <viewController id="Npf-4S-TKl" sceneMemberID="viewController">
+                <viewController id="Npf-4S-TKl" customClass="TourDetailsViewController" customModule="Roamer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QIi-h7-nar"/>
                         <viewControllerLayoutGuide type="bottom" id="eVg-8Z-lS4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HMt-v3-EzW">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HX0-1h-z0X">
+                                <rect key="frame" x="0.0" y="20" width="600" height="980"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SgV-v0-RrD">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="1000"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1000" id="vVe-9u-QuT"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJI-1i-r9c">
+                                        <rect key="frame" x="279" y="58" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scf-MN-e6h">
+                                        <rect key="frame" x="279" y="877" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="SgV-v0-RrD" firstAttribute="top" secondItem="HX0-1h-z0X" secondAttribute="top" id="5Np-r0-GlF"/>
+                                    <constraint firstItem="OJI-1i-r9c" firstAttribute="top" secondItem="HX0-1h-z0X" secondAttribute="top" constant="58" id="A1n-dr-0Bo"/>
+                                    <constraint firstItem="scf-MN-e6h" firstAttribute="centerX" secondItem="HX0-1h-z0X" secondAttribute="centerX" id="MGM-hq-vne"/>
+                                    <constraint firstAttribute="bottom" secondItem="scf-MN-e6h" secondAttribute="bottom" constant="82" id="QZD-EU-G9T"/>
+                                    <constraint firstItem="SgV-v0-RrD" firstAttribute="leading" secondItem="HX0-1h-z0X" secondAttribute="leading" id="jWl-2k-KNP"/>
+                                    <constraint firstAttribute="trailing" secondItem="SgV-v0-RrD" secondAttribute="trailing" id="oDg-Jn-fJQ"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HX0-1h-z0X" secondAttribute="trailing" id="6Cd-Ue-vFt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HX0-1h-z0X" secondAttribute="trailing" constant="-20" id="8y0-p4-QeN"/>
+                            <constraint firstItem="OJI-1i-r9c" firstAttribute="centerX" secondItem="HMt-v3-EzW" secondAttribute="centerX" id="Q4w-S3-2eN"/>
+                            <constraint firstItem="eVg-8Z-lS4" firstAttribute="top" secondItem="HX0-1h-z0X" secondAttribute="bottom" id="Uvi-E1-oW3"/>
+                            <constraint firstItem="HX0-1h-z0X" firstAttribute="leading" secondItem="HMt-v3-EzW" secondAttribute="leadingMargin" constant="-20" id="khA-gk-Feo"/>
+                            <constraint firstItem="HX0-1h-z0X" firstAttribute="leading" secondItem="HMt-v3-EzW" secondAttribute="leading" id="lqF-g6-dpY"/>
+                            <constraint firstItem="HX0-1h-z0X" firstAttribute="top" secondItem="QIi-h7-nar" secondAttribute="bottom" id="xe4-jM-HH9"/>
+                        </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="1000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tbf-kg-7Q4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="370" y="-655"/>
         </scene>
     </scenes>
     <resources>
