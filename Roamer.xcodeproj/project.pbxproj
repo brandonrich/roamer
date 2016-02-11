@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7202CE211C6C3BA100C50257 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7202CE201C6C3BA100C50257 /* Review.swift */; };
+		7202CE231C6C3D5500C50257 /* ReviewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7202CE221C6C3D5500C50257 /* ReviewsTableViewController.swift */; };
+		7202CE251C6C3D6800C50257 /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7202CE241C6C3D6800C50257 /* ReviewTableViewCell.swift */; };
 		721AD5F41C698E7B003768B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AD5F31C698E7B003768B7 /* AppDelegate.swift */; };
 		721AD5F91C698E7B003768B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 721AD5F71C698E7B003768B7 /* Main.storyboard */; };
 		721AD5FB1C698E7B003768B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 721AD5FA1C698E7B003768B7 /* Assets.xcassets */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		7202CE201C6C3BA100C50257 /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		7202CE221C6C3D5500C50257 /* ReviewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewController.swift; sourceTree = "<group>"; };
+		7202CE241C6C3D6800C50257 /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
 		721AD5F01C698E7B003768B7 /* Roamer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roamer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		721AD5F31C698E7B003768B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		721AD5F81C698E7B003768B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 		721AD6071C699066003768B7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				7202CE221C6C3D5500C50257 /* ReviewsTableViewController.swift */,
 				7272C1431C6C2D8F00D42EC6 /* BuyNowViewController.swift */,
 				721AD6191C6AD300003768B7 /* SelectDatesViewController.swift */,
 				721AD6151C6A4BB0003768B7 /* TourDetailsViewController.swift */,
@@ -116,6 +121,7 @@
 		721AD6091C699080003768B7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7202CE241C6C3D6800C50257 /* ReviewTableViewCell.swift */,
 				7272C1471C6C306F00D42EC6 /* GuestTableViewCell.swift */,
 				7202CE201C6C3BA100C50257 /* Review.swift */,
 				721AD5F71C698E7B003768B7 /* Main.storyboard */,
@@ -221,6 +227,8 @@
 				721AD61A1C6AD300003768B7 /* SelectDatesViewController.swift in Sources */,
 				7272C1461C6C304300D42EC6 /* Person.swift in Sources */,
 				721AD6101C6A4B28003768B7 /* TourTableViewCell.swift in Sources */,
+				7202CE251C6C3D6800C50257 /* ReviewTableViewCell.swift in Sources */,
+				7202CE231C6C3D5500C50257 /* ReviewsTableViewController.swift in Sources */,
 				721AD61C1C6ADCE0003768B7 /* DestinationTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

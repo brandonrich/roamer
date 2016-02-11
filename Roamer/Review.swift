@@ -13,11 +13,13 @@ class Review {
     var reviewer: String = ""
     var dateTime: NSDate
     var text: String
+    var rating: String
     
-    init(title:String, reviewer:String, text:String) {
+    init(title:String, reviewer:String, text:String, rating: String) {
         self.title = title
         self.reviewer = reviewer
         self.text = text
+        self.rating = rating
         self.dateTime = NSDate()
     }
 }

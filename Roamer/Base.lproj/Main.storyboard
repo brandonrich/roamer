@@ -404,7 +404,7 @@ details of the tour details</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="nNE-ni-CRZ" kind="show" id="xUH-7M-RY3"/>
+                                    <segue destination="O3p-Gh-tzn" kind="show" id="8JO-Up-xzN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -440,6 +440,114 @@ details of the tour details</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uSq-1l-wLz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4369" y="254"/>
+        </scene>
+        <!--Reviews-->
+        <scene sceneID="myE-JP-LAW">
+            <objects>
+                <tableViewController title="Reviews" id="O3p-Gh-tzn" customClass="ReviewsTableViewController" customModule="Roamer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="199" sectionHeaderHeight="28" sectionFooterHeight="28" id="QD5-AN-tSw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reviewCell" rowHeight="199" id="DLq-oE-icy" customClass="ReviewTableViewCell" customModule="Roamer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="414" height="199"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DLq-oE-icy" id="1TZ-qS-HQT">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="198.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Subject" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSs-Ap-pLc">
+                                            <rect key="frame" x="8" y="8" width="194" height="20.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="194" id="DlM-fx-6T3"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Rating" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqy-rb-tL6">
+                                            <rect key="frame" x="303" y="8" width="63" height="20.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="63" id="mfg-vr-YkU"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="Opa-fh-Oed">
+                                            <rect key="frame" x="374" y="3" width="32" height="32"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="32" id="DvZ-DO-a0l"/>
+                                                <constraint firstAttribute="width" secondItem="Opa-fh-Oed" secondAttribute="height" multiplier="1:1" id="KFB-qi-kgV"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="im6-zB-IKS">
+                                            <rect key="frame" x="8" y="63" width="398" height="127.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="127.5" id="kMt-jS-RPE"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="127.5" id="kqP-Vl-zvk"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Reviewer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSr-Yf-cAW">
+                                            <rect key="frame" x="8" y="37.5" width="107" height="17.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="107" id="ATR-IQ-zo1"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYK-6m-TEb">
+                                            <rect key="frame" x="375.5" y="37" width="30.5" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="leadingMargin" secondItem="gSs-Ap-pLc" secondAttribute="leading" id="4XT-za-ygj"/>
+                                        <constraint firstItem="Opa-fh-Oed" firstAttribute="leading" secondItem="eqy-rb-tL6" secondAttribute="trailing" constant="8" id="BIr-Hr-FVI"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="VSr-Yf-cAW" secondAttribute="leading" id="DBv-vz-hSv"/>
+                                        <constraint firstItem="Opa-fh-Oed" firstAttribute="top" secondItem="1TZ-qS-HQT" secondAttribute="topMargin" constant="-5" id="DK0-fl-I6k"/>
+                                        <constraint firstAttribute="topMargin" secondItem="gSs-Ap-pLc" secondAttribute="top" id="E6f-be-ZwM"/>
+                                        <constraint firstItem="VSr-Yf-cAW" firstAttribute="top" secondItem="gSs-Ap-pLc" secondAttribute="bottom" constant="9" id="VER-2b-Jpc"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="im6-zB-IKS" secondAttribute="bottom" id="Vxc-7n-QJM"/>
+                                        <constraint firstItem="eqy-rb-tL6" firstAttribute="baseline" secondItem="gSs-Ap-pLc" secondAttribute="baseline" id="YpI-iw-FlF"/>
+                                        <constraint firstItem="im6-zB-IKS" firstAttribute="top" secondItem="VSr-Yf-cAW" secondAttribute="bottom" constant="8" id="aOQ-DW-kCq"/>
+                                        <constraint firstItem="im6-zB-IKS" firstAttribute="top" secondItem="NYK-6m-TEb" secondAttribute="bottom" constant="9" id="as7-bD-S6U"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="NYK-6m-TEb" secondAttribute="trailing" id="ctg-iL-o9T"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="im6-zB-IKS" secondAttribute="trailing" id="dmo-gA-tgu"/>
+                                        <constraint firstItem="im6-zB-IKS" firstAttribute="top" secondItem="VSr-Yf-cAW" secondAttribute="bottom" constant="8" id="rw2-LB-fiC"/>
+                                        <constraint firstItem="NYK-6m-TEb" firstAttribute="top" secondItem="Opa-fh-Oed" secondAttribute="bottom" constant="2" id="sma-bW-PMS"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="im6-zB-IKS" secondAttribute="leading" id="uMN-VP-Zd3"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Opa-fh-Oed" secondAttribute="trailing" id="yCW-Sf-LTc"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dateLabel" destination="NYK-6m-TEb" id="Mf8-hB-HxO"/>
+                                    <outlet property="detailLabel" destination="im6-zB-IKS" id="dDD-qx-7gn"/>
+                                    <outlet property="ratingLabel" destination="eqy-rb-tL6" id="0mS-oL-lrI"/>
+                                    <outlet property="reviewerLabel" destination="VSr-Yf-cAW" id="Hix-TJ-5Zt"/>
+                                    <outlet property="subjectLabel" destination="gSs-Ap-pLc" id="nB2-LD-PLy"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="O3p-Gh-tzn" id="Wau-DB-oMu"/>
+                            <outlet property="delegate" destination="O3p-Gh-tzn" id="ou6-PH-9pG"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="tableView" destination="QD5-AN-tSw" id="h6c-3j-uHO"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qg2-Mt-HUe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5064" y="217"/>
         </scene>
         <!--Book Tour-->
         <scene sceneID="Sde-WM-Mq0">
@@ -602,24 +710,6 @@ details of the tour details</string>
             </objects>
             <point key="canvasLocation" x="4411" y="1164"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="zRO-ve-RRz">
-            <objects>
-                <viewController id="nNE-ni-CRZ" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="UpA-Pm-NoZ"/>
-                        <viewControllerLayoutGuide type="bottom" id="2lW-lk-7lN"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="713-LZ-UJY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TOh-Qx-bu8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4956" y="246"/>
-        </scene>
         <!--Roamer-->
         <scene sceneID="TZo-e2-ute">
             <objects>
@@ -665,6 +755,7 @@ details of the tour details</string>
         <image name="Icon+Beach+Square" width="500" height="500"/>
         <image name="paris_banner" width="525" height="294"/>
         <image name="rating" width="742" height="160"/>
+        <image name="star" width="300" height="302"/>
         <image name="suitcase" width="1000" height="865"/>
         <image name="tour_guide" width="406" height="406"/>
     </resources>
