@@ -13,11 +13,11 @@ class ReviewsTableViewController: UITableViewController {
     var reviews: [Review] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationController?.title = "Reviews"
         let r = Review(title: "Amazing Experience!", reviewer: "Carmen", text: "I thoroughly enjoyed this tour!  Not only did Emil impress everyone with his depth of historical knowledge, I'm pretty sure I caught him checking me out a few times!",rating:"5.0")
         reviews.append(r)
         
-        reviews.append(Review(title: "Not Bad", reviewer: "Waldo", text: "I was pleased with the breadth and depth of this tour.  However, the tour guide kept flirting with this girl in my group.  He lost his train of thought at least a half-dozen times, and I'm pretty sure I know why.  Emil knows a lot, but focus, man!", rating: "3.5"))
+        reviews.append(Review(title: "Not Bad", reviewer: "Waldo", text: "I was pleased with the breadth and depth of this tour.  However, the tour guide kept flirting with this girl in my group.  He lost his train of thought at least a half-dozen times, and I'm pretty sure I know why.  Emil knows a lot, but focus, dude!", rating: "3.5"))
         
         reviews.append(Review(title: "Wow!", reviewer: "Phillip", text: "Man, all this time I thought Lumiere was the clock!  Thanks, Emil!", rating: "4.5"))
         // Uncomment the following line to preserve selection between presentations
