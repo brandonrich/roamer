@@ -21,6 +21,9 @@
 		721AD6181C6A61B1003768B7 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AD6171C6A61B1003768B7 /* Destination.swift */; };
 		721AD61A1C6AD300003768B7 /* SelectDatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AD6191C6AD300003768B7 /* SelectDatesViewController.swift */; };
 		721AD61C1C6ADCE0003768B7 /* DestinationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AD61B1C6ADCE0003768B7 /* DestinationTableViewCell.swift */; };
+		7272C1441C6C2D8F00D42EC6 /* BuyNowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7272C1431C6C2D8F00D42EC6 /* BuyNowViewController.swift */; };
+		7272C1461C6C304300D42EC6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7272C1451C6C304300D42EC6 /* Person.swift */; };
+		7272C1481C6C306F00D42EC6 /* GuestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7272C1471C6C306F00D42EC6 /* GuestTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		721AD6171C6A61B1003768B7 /* Destination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		721AD6191C6AD300003768B7 /* SelectDatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDatesViewController.swift; sourceTree = "<group>"; };
 		721AD61B1C6ADCE0003768B7 /* DestinationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationTableViewCell.swift; sourceTree = "<group>"; };
+		7272C1431C6C2D8F00D42EC6 /* BuyNowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyNowViewController.swift; sourceTree = "<group>"; };
+		7272C1451C6C304300D42EC6 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		7272C1471C6C306F00D42EC6 /* GuestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuestTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,7 @@
 		721AD6071C699066003768B7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				7272C1431C6C2D8F00D42EC6 /* BuyNowViewController.swift */,
 				721AD6191C6AD300003768B7 /* SelectDatesViewController.swift */,
 				721AD6151C6A4BB0003768B7 /* TourDetailsViewController.swift */,
 				721AD6111C6A4B4E003768B7 /* ChooseTourTableViewController.swift */,
@@ -107,6 +114,7 @@
 		721AD6091C699080003768B7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7272C1471C6C306F00D42EC6 /* GuestTableViewCell.swift */,
 				721AD5F71C698E7B003768B7 /* Main.storyboard */,
 				721AD61B1C6ADCE0003768B7 /* DestinationTableViewCell.swift */,
 				721AD60F1C6A4B28003768B7 /* TourTableViewCell.swift */,
@@ -117,6 +125,7 @@
 		721AD60A1C699089003768B7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7272C1451C6C304300D42EC6 /* Person.swift */,
 				721AD6131C6A4B61003768B7 /* Tour.swift */,
 				721AD6171C6A61B1003768B7 /* Destination.swift */,
 			);
@@ -201,9 +210,12 @@
 				721AD6061C699061003768B7 /* LoginViewController.swift in Sources */,
 				721AD6121C6A4B4E003768B7 /* ChooseTourTableViewController.swift in Sources */,
 				721AD6181C6A61B1003768B7 /* Destination.swift in Sources */,
+				7272C1481C6C306F00D42EC6 /* GuestTableViewCell.swift in Sources */,
 				721AD5F41C698E7B003768B7 /* AppDelegate.swift in Sources */,
 				721AD60E1C6A065A003768B7 /* BookATripTableViewController.swift in Sources */,
+				7272C1441C6C2D8F00D42EC6 /* BuyNowViewController.swift in Sources */,
 				721AD61A1C6AD300003768B7 /* SelectDatesViewController.swift in Sources */,
+				7272C1461C6C304300D42EC6 /* Person.swift in Sources */,
 				721AD6101C6A4B28003768B7 /* TourTableViewCell.swift in Sources */,
 				721AD61C1C6ADCE0003768B7 /* DestinationTableViewCell.swift in Sources */,
 			);
