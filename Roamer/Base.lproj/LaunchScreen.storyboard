@@ -3,7 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -19,18 +19,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="roamer" translatesAutoresizingMaskIntoConstraints="NO" id="MiG-hn-OKo">
-                                <rect key="frame" x="20" y="199" width="561" height="201"/>
+                                <rect key="frame" x="107" y="199.5" width="386" height="201"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="201" id="7Wt-gS-2hi"/>
+                                    <constraint firstAttribute="width" secondItem="MiG-hn-OKo" secondAttribute="height" multiplier="503:262" id="Esf-ab-L3m"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="MiG-hn-OKo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Tdg-pc-XQp"/>
-                            <constraint firstItem="MiG-hn-OKo" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="UIr-DM-q52"/>
-                            <constraint firstItem="MiG-hn-OKo" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="c7u-Lq-xQE"/>
-                            <constraint firstItem="MiG-hn-OKo" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="179" id="luQ-O2-N8G"/>
+                            <constraint firstItem="MiG-hn-OKo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="1Nq-Aq-HQJ"/>
+                            <constraint firstItem="MiG-hn-OKo" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="EQ7-kh-W1d"/>
                         </constraints>
                     </view>
                 </viewController>
