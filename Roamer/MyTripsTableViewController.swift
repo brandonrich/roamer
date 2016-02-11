@@ -10,12 +10,16 @@ import UIKit
 
 class MyTripsTableViewController: UITableViewController {
 
+    var trips: [String] = []
     override func viewWillAppear(animated: Bool) {
         self.tabBarController?.title = "My Trips"
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        trips.append("Barcelona, Spain: 10/16/2014")
+        trips.append("Munich, Germany: 11/08/2015")
+        trips.append("Paris, France: 8/24/2016")
+                trips.append("Beijing, China: 9/22/2017")
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -33,23 +37,23 @@ class MyTripsTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return trips.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("myTripCell", forIndexPath: indexPath)
-
+        cell.textLabel?.text = trips[indexPath.row]
         // Configure the cell...
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

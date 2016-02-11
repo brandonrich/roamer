@@ -47,18 +47,27 @@
                                     <segue destination="KzW-L4-n6d" kind="show" id="YB0-i5-tlu"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel" translatesAutoresizingMaskIntoConstraints="NO" id="4iE-oy-vC6">
+                                <rect key="frame" x="11" y="497" width="416" height="239"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4iE-oy-vC6" secondAttribute="height" multiplier="416:239" id="O9C-bt-XRq"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="01S-W1-VEg" firstAttribute="centerX" secondItem="ZZE-vq-f21" secondAttribute="centerX" id="4Hh-4Q-QG5"/>
                             <constraint firstItem="NqB-Ub-ccJ" firstAttribute="top" secondItem="01S-W1-VEg" secondAttribute="bottom" constant="40" id="6JT-6q-sny"/>
+                            <constraint firstItem="4iE-oy-vC6" firstAttribute="leading" secondItem="ZZE-vq-f21" secondAttribute="leadingMargin" constant="-9" id="JQc-K3-yoR"/>
                             <constraint firstItem="NqB-Ub-ccJ" firstAttribute="centerX" secondItem="01S-W1-VEg" secondAttribute="centerX" id="Mpd-iY-evt"/>
                             <constraint firstItem="BGr-FW-hPT" firstAttribute="top" secondItem="Fbf-3G-xYO" secondAttribute="bottom" constant="40" id="SYu-sZ-jHi"/>
                             <constraint firstItem="Fbf-3G-xYO" firstAttribute="width" secondItem="NqB-Ub-ccJ" secondAttribute="width" id="Uh4-Jf-R6W"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4iE-oy-vC6" secondAttribute="trailing" constant="-33" id="W09-lO-rPl"/>
                             <constraint firstItem="Fbf-3G-xYO" firstAttribute="centerX" secondItem="NqB-Ub-ccJ" secondAttribute="centerX" id="XpZ-9F-irr"/>
                             <constraint firstItem="01S-W1-VEg" firstAttribute="top" secondItem="mCi-9y-5uw" secondAttribute="bottom" constant="66" id="bQk-Pl-nLC"/>
                             <constraint firstItem="Fbf-3G-xYO" firstAttribute="top" secondItem="NqB-Ub-ccJ" secondAttribute="bottom" constant="40" id="dVE-4Y-s5z"/>
                             <constraint firstItem="BGr-FW-hPT" firstAttribute="centerX" secondItem="Fbf-3G-xYO" secondAttribute="centerX" id="dva-nr-mY6"/>
+                            <constraint firstItem="YFM-OO-Uxt" firstAttribute="top" secondItem="4iE-oy-vC6" secondAttribute="bottom" id="zhu-RH-Awe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Roamer" id="Ip0-y8-T80"/>
@@ -758,5 +767,6 @@ details of the tour details</string>
         <image name="star" width="300" height="302"/>
         <image name="suitcase" width="1000" height="865"/>
         <image name="tour_guide" width="406" height="406"/>
+        <image name="travel" width="1106" height="570"/>
     </resources>
 </document>
